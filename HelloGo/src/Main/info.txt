@@ -1,0 +1,29 @@
+>Make sure to have the package as :
+	package main
+for your starting point application
+The entry point of each go program is main.main,
+i.e. a function called main in a package called main. You have to provide such a main package.
+
+>type X struct must be defined inside the file to be used. But their name must be unique across a package
+
+>Anything inside a Go file with a first letter as capital letter is public or exported else private
+
+>Only for keyword for looping, no while or forEach. Though we can simulate all types of loop using just for
+
+>key used in a Map in Golang must equality operator defined for them
+ Maps are not thread safe
+ Maps are reference types i.e. actual maps are passed to methods hence any changes will impact original map
+ Operation on Map: Insert, update, delete, checkForExistence
+
+> Array is not refernce type but value type in GO, i.e. upon passing, a copy of it is passed
+
+>Slice: we use make() to initialize a slice else it will be nil. It internally points to array
+ And it is reference type
+
+>An empty interface is like an object in java in sense that, it is the generic type and can be used as a generic type
+
+>Channels can only have 1 element at a time and is blocked upon insertion until removal of the data happens
+>Buffered channel can have more than one element in it and data can be extracted simultaneously
+>We never store data in slice, slice stores data in an array behind the scene and slice simply comtains the
+ pointer to those array indexes. To make a slice, make(TYPE, LEN OF SLICE, CAPACITY OF ARRAY UNDERNEATH)
+>
